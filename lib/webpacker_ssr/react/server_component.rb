@@ -27,7 +27,6 @@ module WebpackerSSR
       def teardown(controller); end
 
       def call
-        puts pipeline.code
         WebpackerSSR.render(pipeline.code)
       end
 
